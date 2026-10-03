@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <!-- Brand Logo -->
+            <a href="/" class="brand-logo" aria-label="ÉLANE Jewelry Home">
+                ÉLANE
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="/" class="nav-link active">Home</a>
+                </li>
+
+                <li>
+                    <a href="/shop.html" class="nav-link">Shop</a>
+                </li>
+
+                <li>
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Shopping Cart -->
+            <a href="/cart.html" class="cart-link" aria-label="View shopping cart">
+                <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M3 4H5L7.4 15.2C7.62 16.23 8.53 17 9.58 17H17.8C18.75 17 19.59 16.34 19.82 15.42L21 10H6"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <circle cx="10" cy="20" r="1" fill="currentColor" />
+
+                    <circle cx="18" cy="20" r="1" fill="currentColor" />
+                </svg>
+
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =========================================
+     CONTACT PAGE — MAIN SECTION
+========================================= -->
+
+        <section class="contact-section">
+            <div class="contact-container">
+
+                <!-- Left Column — Get in Touch -->
+                <div class="contact-info">
+
+                    <p class="contact-eyebrow">Get in Touch</p>
+
+                    <h1>We’d Love to Hear From You</h1>
+
+                    <p class="contact-intro">
+                        Whether you have a question about a piece, need help with an order,
+                        or simply want to say hello, our team is here to help.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <!-- Email -->
+                        <div class="contact-detail">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@yourjewelrybrand.com">
+                                hello@yourjewelrybrand.com
+                            </a>
+                        </div>
+
+                        <!-- Customer Service Hours -->
+                        <div class="contact-detail">
+                            <span class="contact-label">Customer Service</span>
+                            <p>
+                                Monday – Friday<br />
+                                9:00 AM – 5:00 PM
+                            </p>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-detail">
+                            <span class="contact-label">Follow Along</span>
+
+                            <div class="contact-socials">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    Instagram
+                                </a>
+
+                                <span>/</span>
+
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    Pinterest
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Response Time -->
+                        <div class="contact-response">
+                            <span class="response-dot"></span>
+                            <span>We reply within 24 hours.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Right Column — Contact Form -->
+                <div class="contact-form-wrapper">
+
+                    <form class="contact-form">
+
+                        <!-- Name -->
+                        <div class="form-field">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name"
+                                required />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-field">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="you@example.com"
+                                autocomplete="email" required />
+                        </div>
+
+                        <!-- Order Number -->
+                        <div class="form-field">
+                            <label for="contact-order">Order Number <span>(Optional)</span></label>
+                            <input type="text" id="contact-order" name="order-number" placeholder="e.g. #10482" />
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-field form-message">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" placeholder="How can we help?" rows="5"
+                                required></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="contact-submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================================
+     CONTACT PAGE — MAP & FAQ CLOSURE
+========================================= -->
+
+        <section class="contact-closure">
+            <div class="contact-closure-container">
+
+                <!-- Left — Map Placeholder -->
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-placeholder-content">
+                            <span class="map-pin">+</span>
+                            <p>Handcrafted in [City]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right — FAQ -->
+                <div class="contact-faq">
+                    <p class="contact-faq-eyebrow">Need Help?</p>
+
+                    <h2>Have a quick question?</h2>
+
+                    <a href="/shipping-jewelry-care" class="contact-faq-link">
+                        Shipping &amp; Jewelry Care FAQ
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Column 1: Brand -->
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    Aurelia
+                </a>
+
+                <p class="footer-statement">
+                    Timeless, handcrafted jewelry designed to celebrate
+                    the beauty of everyday moments.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <nav aria-label="Footer navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Column 3: Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Stay in the Loop</h3>
+
+                <p>
+                    Join our newsletter for new collections, exclusive
+                    offers, and stories from our studio.
+                </p>
+
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">
+                        Email address
+                    </label>
+
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your email address"
+                        autocomplete="email" required />
+
+                    <button type="submit">
+                        Join
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 Aurelia Jewelry. All rights reserved.
+            </p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

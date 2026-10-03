@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <!-- Brand Logo -->
+            <a href="/" class="brand-logo" aria-label="ÉLANE Jewelry Home">
+                ÉLANE
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="/" class="nav-link active">Home</a>
+                </li>
+
+                <li>
+                    <a href="/shop.html" class="nav-link">Shop</a>
+                </li>
+
+                <li>
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Shopping Cart -->
+            <a href="/cart.html" class="cart-link" aria-label="View shopping cart">
+                <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M3 4H5L7.4 15.2C7.62 16.23 8.53 17 9.58 17H17.8C18.75 17 19.59 16.34 19.82 15.42L21 10H6"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <circle cx="10" cy="20" r="1" fill="currentColor" />
+
+                    <circle cx="18" cy="20" r="1" fill="currentColor" />
+                </svg>
+
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="shop-banner">
+            <div class="shop-banner-content">
+                <span class="shop-banner-eyebrow">The Collection</span>
+
+                <h1>Explore Our Collections</h1>
+
+                <p>
+                    Every piece is uniquely handcrafted with care, combining
+                    timeless design with thoughtful artisan craftsmanship.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="shop-catalog">
+            <div class="catalog-container">
+
+                <!-- ========================================
+         SIDEBAR
+    ========================================= -->
+
+                <aside class="catalog-sidebar">
+
+                    <div class="filter-section">
+                        <h2>Filter By</h2>
+                    </div>
+
+                    <!-- Product Type -->
+                    <div class="filter-group">
+                        <h3>Product Type</h3>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="product-type" value="necklaces">
+                            <span>Necklaces</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="product-type" value="bracelets">
+                            <span>Bracelets</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="product-type" value="earrings">
+                            <span>Earrings</span>
+                        </label>
+                    </div>
+
+                    <!-- Sort By -->
+                    <div class="filter-group">
+                        <label for="sort-products">
+                            <h3>Sort By</h3>
+                        </label>
+
+                        <select id="sort-products" name="sort-products">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                </aside>
+
+
+                <!-- ========================================
+         PRODUCT AREA
+    ========================================= -->
+
+                <div class="catalog-products">
+
+                    <div class="catalog-topbar">
+                        <p>Showing 8 of 24 pieces</p>
+                    </div>
+
+                    <div class="catalog-grid">
+
+                        <!-- Product 1 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQrcxfLUflyPD6rvMK-7yxFHAIcEM-B3BiumTaH0IgFxyEOCdaVEsV-OEJ7bsuhdDnsNN4vuxV1Y_KeTcowxAyV49wa8kLJZ1oC2v4GTV85N6wbuRHe3w5XmA&usqp=CAc"
+                                    alt="Celeste Gold Necklace" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Celeste Gold Necklace</h3>
+                                <p class="catalog-price">R1,250</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 2 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtG90GzLl09F5PaCrz4mgd_PuBgIAep2ctRTWymhF8Q&s=10"
+                                    alt="Luna Pearl Bracelet" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Luna Pearl Bracelet</h3>
+                                <p class="catalog-price">R890</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 3 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQyCWwm3_VgN1D5ExXFDumy7QwKcvksNOC9dgcbCAzPJRQqRomjN1zMhfbn2IuauLQHIRvV-xPZgckEVJxmHBzI6NAFsaNegGwdlF1vWYLQXkTBNQNnudGQAbcxaZ5X9GKuQxc1ytSLUw&usqp=CAc"
+                                    alt="Amara Drop Earrings" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Amara Drop Earrings</h3>
+                                <p class="catalog-price">R750</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 4 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS614IvN3032tjVuelwW7irdyzBMk5OJRQtG_kGrdoGyw&s"
+                                    alt="Sienna Gold Ring" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Sienna Gold Ring</h3>
+                                <p class="catalog-price">R680</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 5 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKERtiMm8GKoyt4Eh94lJqhAfEqb-rEcwg7dXKyGxjQIZ3HYRn5e35fAKSldIuZm70weQ5Ro0ETtuHfP4xcSZaMnArlzlLiWOZTp8qFxYVNnnvmyeDCITamSU_LU_XHxWxCmOGXZY&usqp=CAc"
+                                    alt="Elara Pearl Necklace" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Elara Pearl Necklace</h3>
+                                <p class="catalog-price">R1,450</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 6 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8fyQBc7dFcmJCabbhNkSX-2jgBW3pWRWhbOjI3B-9Fg&s"
+                                    alt="Isla Chain Bracelet" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Isla Chain Bracelet</h3>
+                                <p class="catalog-price">R950</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 7 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://via.placeholder.com/700x850" alt="Mila Pearl Earrings" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Mila Pearl Earrings</h3>
+                                <p class="catalog-price">R820</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+
+                        <!-- Product 8 -->
+                        <article class="catalog-product-card">
+                            <div class="catalog-product-image">
+                                <img src="https://via.placeholder.com/700x850" alt="Aurora Pendant Necklace" />
+                            </div>
+
+                            <div class="catalog-product-info">
+                                <h3>Aurora Pendant Necklace</h3>
+                                <p class="catalog-price">R1,180</p>
+
+                                <button class="quick-view" type="button">
+                                    Quick View
+                                </button>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <nav class="shop-pagination" aria-label="Shop pagination">
+
+            <a href="#" class="pagination-number active" aria-current="page">
+                1
+            </a>
+
+            <a href="#" class="pagination-number">
+                2
+            </a>
+
+            <a href="#" class="pagination-number">
+                3
+            </a>
+
+            <a href="#" class="pagination-number">
+                4
+            </a>
+
+            <a href="#" class="pagination-next">
+                Next
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Column 1: Brand -->
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    Aurelia
+                </a>
+
+                <p class="footer-statement">
+                    Timeless, handcrafted jewelry designed to celebrate
+                    the beauty of everyday moments.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <nav aria-label="Footer navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Column 3: Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Stay in the Loop</h3>
+
+                <p>
+                    Join our newsletter for new collections, exclusive
+                    offers, and stories from our studio.
+                </p>
+
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">
+                        Email address
+                    </label>
+
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your email address"
+                        autocomplete="email" required />
+
+                    <button type="submit">
+                        Join
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 Aurelia Jewelry. All rights reserved.
+            </p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
